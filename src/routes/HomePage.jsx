@@ -1,5 +1,5 @@
-import React from "react";
 import { Link } from "react-router";
+import MainCategories from "../components/MainCategories";
 
 const HomePage = () => {
   return (
@@ -21,7 +21,7 @@ const HomePage = () => {
             aperiam magnam enim nihil vitae excepturi
           </p>
         </div>
-        <Link to="/write" className="relative">
+        <Link to="/write" className="relative hidden md:block">
           <svg
             viewBox="0 0 200 200"
             width="200"
@@ -58,6 +58,8 @@ const HomePage = () => {
           </button>
         </Link>
       </div>
+      {/* MAIN CATEGORIES */}
+      <MainCategories />
     </div>
   );
 };
