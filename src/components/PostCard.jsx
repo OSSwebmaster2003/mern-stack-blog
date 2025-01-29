@@ -6,7 +6,11 @@ const PostCard = () => {
     <div className="flex flex-col gap-8 xl:flex-row">
       {/* image */}
       <div className="md:hidden xl:block xl:w-1/3">
-        <Image src="postImg.jpeg" className="object-cover rounded-2xl" />
+        <Image
+          src="postImg.jpeg"
+          className="object-cover rounded-2xl"
+          w="735"
+        />
       </div>
       {/* details */}
       <div className="flex flex-col gap-4 xl:w-2/3">
